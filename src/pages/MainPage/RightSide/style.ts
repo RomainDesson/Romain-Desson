@@ -2,9 +2,9 @@ import styled from "styled-components";
 import {animated} from "react-spring";
 
 export const BubbleWrapper = styled.div`
-  position: relative;
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  width: 100vw;
+  height: 50vh;
 `;
 
 export const BubbleContainer = styled(animated.div)<{ margin: string, top: string, left: string }>`
