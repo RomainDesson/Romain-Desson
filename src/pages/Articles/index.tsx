@@ -49,7 +49,7 @@ export const Articles = () => {
         <>
             <ArticlesPostWrapper>
                 {transitions((style, article) => (
-                    <animated.div style={{...style}}>
+                    <animated.div style={{...style}} key={article.id}>
                         <ArticleCard
                             key={article.id}
                             article={article}
